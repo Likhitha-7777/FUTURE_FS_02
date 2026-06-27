@@ -1,0 +1,124 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Client Lead Management System</h1>
+
+        <!-- Add Lead Form -->
+
+        <div class="lead-form">
+
+            <h2>Add New Lead</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Client Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Client Email"
+            >
+
+            <input
+                type="text"
+                id="source"
+                placeholder="Lead Source (Website, LinkedIn, Referral)"
+            >
+
+            <button onclick="addLead()">
+                Add Lead
+            </button>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h3>Total Leads</h3>
+
+                <p id="totalLeads">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>New Leads</h3>
+
+                <p id="newLeads">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Converted Leads</h3>
+
+                <p id="convertedLeads">0</p>
+
+            </div>
+
+        </div>
+
+        <!-- Lead Table -->
+
+        <div class="table-container">
+
+            <h2>Lead Dashboard</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Source</th>
+
+                        <th>Status</th>
+
+                        <th>Created Date</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leadTable">
+
+                    <!-- Data comes from dashboard.js -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

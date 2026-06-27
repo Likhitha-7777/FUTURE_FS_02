@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Lead Details</h1>
+
+    <div class="lead-details">
+
+        <p>
+            <strong>Name:</strong>
+            <span id="leadName"></span>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <span id="leadEmail"></span>
+        </p>
+
+        <p>
+            <strong>Source:</strong>
+            <span id="leadSource"></span>
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+        </p>
+
+        <select id="status">
+            <option value="New">New</option>
+            <option value="Contacted">Contacted</option>
+            <option value="Converted">Converted</option>
+        </select>
+
+        <br><br>
+
+        <textarea
+            id="note"
+            rows="5"
+            cols="50"
+            placeholder="Add follow-up note..."
+        ></textarea>
+
+        <br><br>
+
+        <button onclick="updateLead()">
+            Save Changes
+        </button>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Back
+        </button>
+
+    </div>
+
+</div>
+
+<script src="lead.js"></script>
+
+</body>
+</html>
