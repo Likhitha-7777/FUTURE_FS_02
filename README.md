@@ -11,7 +11,6 @@ This application helps businesses manage customer leads efficiently by allowing 
 
 ## 🚀 Features
 
-* 🔐 Admin Login
 * ➕ Add New Leads
 * 📋 View All Leads
 * 🔄 Update Lead Status (New, Contacted, Converted)
