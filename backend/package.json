@@ -1,0 +1,30 @@
+{
+  "name": "mini-crm",
+  "version": "1.0.0",
+  "description": "Client Lead Management System using Node.js, Express.js and MongoDB",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [
+    "crm",
+    "lead-management",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Likitha",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "mongoose": "^8.18.0",
+    "mysql2": "^3.22.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "type": "commonjs"
+}
